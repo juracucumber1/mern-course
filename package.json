@@ -1,0 +1,29 @@
+{
+  "name": "mern-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juracucumber1/mern-course.git"
+  },
+  "author": "juracucumber1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juracucumber1/mern-course/issues"
+  },
+  "homepage": "https://github.com/juracucumber1/mern-course#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.5"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
