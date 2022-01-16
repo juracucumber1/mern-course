@@ -51,12 +51,11 @@ router.post(
     '/login',
     [
         check('email', 'Введите корентный email').normalizeEmail().isEmail(),
-        check('password', 'Введите пароль').exists
+        check('password', 'Введите пароль').exists()
     ],
     async (req, res) => {
+
         try{
-
-
             const errors = validationResult(req)
 
             if (!errors.isEmpty()) {
@@ -83,13 +82,10 @@ router.post(
             const token = jwt.sign(
                 { userId: user.id },
                 config.get('jwtSecret'),
-                { exiresIn: '1h' }
+                { expiresIn: '1h' }
             )
 
             res.json({ token, userId: user.id })
-
-
-
 
         } catch (e) {
             res.status(500).json({ message: 'Что-то пошло не так, побробуйте снова' })
