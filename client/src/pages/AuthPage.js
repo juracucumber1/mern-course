@@ -41,15 +41,15 @@ export const AuthPage = () => {
     return (
         <div className="row">
             <div className="col s6 offset-s3">
-                <h1>Shorten link</h1>
+                <h1>Сократить ссылку</h1>
                 <div className="card grey darken-3" style={{borderRadius: 4}}>
                     <div className="card-content white-text">
-                        <span className="card-title">Authorization</span>
+                        <span className="card-title">Авторизация</span>
                         <div>
 
                             <div className="input-field">
                                 <input
-                                    placeholder="Enter email"
+                                    placeholder="Введите email"
                                     id="email"
                                     type="text"
                                     name="email"
@@ -62,7 +62,7 @@ export const AuthPage = () => {
 
                             <div className="input-field">
                                 <input
-                                    placeholder="Enter password"
+                                    placeholder="Введите пароль"
                                     id="password"
                                     type="password"
                                     name="password"
@@ -70,18 +70,18 @@ export const AuthPage = () => {
                                     onChange={changeHandler}
 
                                 />
-                                <label htmlFor="email">Password</label>
+                                <label htmlFor="email">Пароль</label>
                             </div>
 
                         </div>
                     </div>
                     <div className="card-action">
                         <button
-                            className="btn red darken-1"
+                            className="btn amber darken-2"
                             style={{marginRight: 10}}
                             disabled={loading}
                             onClick={loginHandler}
-                        >Login
+                        >Войти
                         </button>
                         <button
                             className="btn green darken-1"
@@ -89,7 +89,7 @@ export const AuthPage = () => {
                             disabled={loading}
 
                         >
-                            Sign Up
+                            Регистрация
                         </button>
                     </div>
                 </div>
