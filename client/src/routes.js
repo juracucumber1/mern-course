@@ -6,29 +6,29 @@ import {DetailPage} from "./pages/DetailPage";
 import {AuthPage} from "./pages/AuthPage";
 
 export const useRoutes = isAuthenticated => {
-    if(isAuthenticated) {
+    if (isAuthenticated) {
         return (
             <Switch>
-            <Route patch="/links" exact>
-                <LinksPage />
-            </Route>
-                <Route patch="/create" exact>
-                <CreatePage />
-            </Route>
-                <Route patch="/detail/:id">
-                <DetailPage />
-            </Route>
-                <Redirect to="/create" />
+                <Route path="/links" exact>
+                    <LinksPage/>
+                </Route>
+                <Route path="/create" exact>
+                    <CreatePage/>
+                </Route>
+                <Route path="/detail/:id">
+                    <DetailPage/>
+                </Route>
+                <Redirect to="/create"/>
             </Switch>
         )
     }
 
     return (
         <Switch>
-        <Route patch="/" exact>
-            <AuthPage/>
-        </Route>
-            <Redirect to="/" />
+            <Route patch="/" exact>
+                <AuthPage/>
+            </Route>
+            <Redirect to="/"/>
         </Switch>
     )
 }
