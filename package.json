@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/juracucumber1/mern-course#readme",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.6",
